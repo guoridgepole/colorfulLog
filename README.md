@@ -2,9 +2,9 @@
 colorfulLog 彩色的日志
 <h1>介绍</h1>
 在平时的开发中，如果想在控制台的一堆调试信息中找到自己打印出的log信息，是非常头疼的问题，有时不得不一次次清空掉信息然后重新调试，比如这样
-<img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/pic1.png"/>
+<img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/pic1.png"  width="700px" height="200px"/>
 不想再这么找了，因此写了一个小功能，用来进行有色彩的log内容输出
-<img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/pic2.png"/>
+<img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/pic2.png" width="700px" height="200px"/>
 提示类型分为五种
  * CLog.v 颜色灰色 用于输出无关紧要的内容 <br/>
  * CLog.d 颜色青色，仅输出debug调试 <br/>
