@@ -27,3 +27,36 @@ colorfulLog 彩色的日志
  使用范例:<br/>
  如CLog.v(msg) 或 CLog.v(tag, msg),tag与msg目前都只能为String类型
  <img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/show3.png"/>
+
+
+
+===================================以下为机器翻译========================================
+========================The following is a machine translation==========================
+
+<h1>introduce</h1>
+<p>
+ In the usual development, if you want to be in a heap of debugging information in the console to find your print log information, is a very headache problem, sometimes have to again and again to empty out information to debug, then such as this
+ <img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/pic1.png"  width="700px" height="200px"/><br/>
+ Don't want to find so much, so to write a small function, used for color content of the log output
+ <img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/pic2.png" width="700px" height="200px"/>
+ </p>
+<p>
+ Tip is classified into five kinds
+ <ul>
+  <li>CLog.v The Color gray It doesn't matter is used to output content</li>
+  <li>CLog.d The Cyan color, only the debug output debugging</li>
+  <li>CLog.i The color blue, which is used to output message of presentation</li>
+  <li>CLog.w The Color orange, used as a warning message</li>
+  <li>CLog.e The Color red, for the error</li>
+ </ul>
+</p>
+<p>
+ In intellij idea effect (theme of intellij white theme)<br/>
+ <img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/show1.png"/><br/>
+  Effect in intellij idea (topic) for Darcula dark themes <br/>
+  <img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/show2.png"/>
+</p>
+ Use method is very simple, as long as the corresponding jar package is put into the project, can use directly.
+ examples:<br/>
+ Such as the CLog.v(msg) or CLog.v(tag, msg),tag and msg now can only type String
+ <img src="https://raw.githubusercontent.com/guoridgepole/colorfulLog/master/show3.png"/>
