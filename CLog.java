@@ -1,5 +1,3 @@
-package com.colorfullog.log;
-
 /**
  * 多彩的日志 <br/>
  * log.v 颜色灰色 用于输出无关紧要的内容 <br/>
@@ -17,7 +15,8 @@ public class CLog {
      * @param msg 无关紧要信息的内容
      */
     public static void v(String msg) {
-        System.out.println("\033[37;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[37;m" + "INFO  " + className + "  " + msg + "\033[0m");
     }
 
     /**
@@ -26,7 +25,8 @@ public class CLog {
      * @param msg 无关紧要信息的内容
      */
     public static void v(String tag, String msg) {
-        System.out.println("\033[37;1;m" + tag + ":" + "\033[0m" + "\033[37;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[37;m" + "INFO  " + className + "  "+ "\033[37;1;m" + tag + ":" + "\033[0m" + "\033[37;m" + msg + "\033[0m");
     }
 
     /**
@@ -34,7 +34,8 @@ public class CLog {
      * @param msg debug调试信息的内容
      */
     public static void d(String msg) {
-        System.out.println("\033[96;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[96;m" + "INFO  " + className + "  " + msg + "\033[0m");
     }
 
     /**
@@ -43,7 +44,9 @@ public class CLog {
      * @param msg debug调试信息的内容
      */
     public static void d(String tag, String msg) {
-        System.out.println("\033[96;1;m" + tag + ":" + "\033[0m" + "\033[96;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[96;m" + "INFO  " + className + "  "+ "\033[96;1;m" + tag + ":" + "\033[0m" + "\033[96;m" + msg + "\033[0m");
+
     }
 
     /**
@@ -51,7 +54,9 @@ public class CLog {
      * @param msg 提示性消息的标签
      */
     public static void i(String msg) {
-        System.out.println("\033[34;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[34;m" + "INFO  " + className + "  " + msg + "\033[0m");
+
     }
 
     /**
@@ -60,7 +65,8 @@ public class CLog {
      * @param msg 提示性消息的内容
      */
     public static void i(String tag, String msg) {
-        System.out.println("\033[34;1;m" + tag + ":" + "\033[0m" + "\033[34;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[34;m" + "INFO  " + className + "  "+ "\033[34;1;m" + tag + ":" + "\033[0m" + "\033[34;m" + msg + "\033[0m");
     }
 
     /**
@@ -68,7 +74,8 @@ public class CLog {
      * @param msg 警告信息的内容
      */
     public static void w(String msg) {
-        System.out.println("\033[33;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[33;m" + "INFO  " + className + "  " + msg + "\033[0m");
     }
 
     /**
@@ -77,7 +84,8 @@ public class CLog {
      * @param msg 警告信息的内容
      */
     public static void w(String tag, String msg) {
-        System.out.println("\033[33;1;m" + tag + ":" + "\033[0m" + "\033[33;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[33;m" + "INFO  " + className + "  "+ "\033[33;1;m" + tag + ":" + "\033[0m" + "\033[33;m" + msg + "\033[0m");
     }
 
     /**
@@ -85,7 +93,8 @@ public class CLog {
      * @param msg error错误的信息
      */
     public static void e(String msg) {
-        System.out.println("\033[31;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[31;m" + "INFO  " + className + "  " + msg + "\033[0m");
     }
 
     /**
@@ -94,6 +103,7 @@ public class CLog {
      * @param msg error错误的信息
      */
     public static void e(String tag, String msg) {
-        System.out.println("\033[31;1;m" + tag + ":" + "\033[0m" + "\033[31;m" + msg + "\033[0m");
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        System.out.println("\033[31;m" + "INFO  " + className + "  "+ "\033[31;1;m" + tag + ":" + "\033[0m" + "\033[31;m" + msg + "\033[0m");
     }
 }
